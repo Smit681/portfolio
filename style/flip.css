@@ -1,0 +1,233 @@
+.contact-me{
+    position: fixed;
+    left:20px;
+    bottom:2rem;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: black;
+    padding: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: transform 1s;
+    color: white;
+    cursor: pointer;   
+    overflow: hidden;
+    z-index: 100;
+}
+.contact-me:hover{
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding-right: 100px;  
+    -webkit-transition: all 0.6s;
+    -moz-transition:    all 0.6s;
+    -o-transition:      all 0.6s;
+    -ms-transition:     all 0.6s;
+    transition:         all 0.6s;
+}
+.trigger-Annimation{
+    animation: go-center forwards 2s;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+@keyframes go-center {
+    0%{
+        height: 5%;
+        width: 5%;
+        border-radius: 50%;
+    }
+    100%{
+        left: 50%;
+        bottom: 50%;
+        transform: translate(-50%,50%);
+        height: 70%;
+        width: 80%;
+        border-radius: 1rem;
+    }
+} 
+.remove-Annimation{
+    animation: go-back forwards 2s;
+    backface-visibility: visible;
+}
+@keyframes go-back {
+    0%{
+        left: 50%;
+        bottom: 50%;
+        transform: translate(-50%,50%);
+        height: 70%;
+        width: 80%;
+        border-radius: 1rem;
+    }
+    
+    100%{
+       height: 39px;
+       width: 39px;
+    }
+} 
+
+.back{
+    position: fixed;
+    left:20px;
+    bottom:2rem;
+    background-color:black;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    transition: transform 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    z-index: 100;
+}
+.flip{
+    transform: rotateY(2.5turn);
+    animation: go-center forwards 2s;
+    backface-visibility: visible;
+}
+.flip-back{
+    transform: rotateY(2.5turn);
+    animation: go-back forwards 2s;
+    backface-visibility:hidden;
+}
+
+
+.contactMe{
+    position: fixed;
+    color: white;
+    bottom: 40px;
+    left: 58px;
+    font-size: 13px;
+    display: none; 
+    z-index: 100;
+}
+
+.tooltip{
+    margin-left: 20px;
+    display: var(--dsp);
+}
+
+
+
+.contact-body{
+    display: flex;
+    overflow: hidden;
+    display: none;
+}
+
+
+.leftpart{
+    width: 50%;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.getintouch{
+    font-size: 50px;
+    font-weight: bold;
+    overflow: hidden;
+}
+.addrs{
+    margin-left: 40px;
+    margin-top: 3.5%;
+    color: rgba(255, 255, 255, 0.742);
+    overflow: hidden;
+}
+
+.rightpart{
+    margin-right: 20%;
+    overflow: hidden;
+}
+
+.address{
+    margin-left: 40px;
+    overflow: hidden;
+}
+
+.back h4{
+    text-align: center;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.847);
+    margin: 0px auto;   
+}
+.back h2{
+    font-size: 40px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.nameandemail{
+    display: flex;
+    overflow: hidden;
+}
+
+form button{
+    background-color: red;
+    width: 30%;
+    height: 35px;
+    color: white;
+    border-radius: 0.5rem;
+    margin-left: 10px;  
+    margin-top: 10px; 
+    overflow: hidden; 
+    cursor: pointer;
+    transition: transform 0.5s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+form button:hover{
+    transform: scale(1.2);
+}
+
+.back input{
+    max-width: 50%;
+    margin: 10px;
+    border-radius: 0.5rem;
+    height: 50px;
+    overflow: hidden;
+}
+
+.back textarea{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.symbols{
+    margin: 10px auto;
+    display: flex;
+    justify-content:space-evenly;
+    overflow: hidden;
+}
+.symbols i{
+    margin:auto 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.symbols i:hover{
+    transform: scale(1.2);
+}
+.close{
+    position: absolute;
+    top:10px;
+    right:10px;
+    cursor: pointer;
+    transition: transform 0.4s;
+    overflow: hidden;
+}
+
+.close:hover{
+    transform: scale(1.2);
+}

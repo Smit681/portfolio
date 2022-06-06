@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./style/loder.css" />
+  <link rel="stylesheet" href="./style/flip.css">
+  <link rel="stylesheet" href="./style/home.css">
+  <link rel="stylesheet" href="./style/about.css">
+  <link rel="stylesheet" href="./style/project.css">
+  <!-- font Awesome -->
+
+  <link rel="icon" href="./assets/logo.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+</head>
+
+<body>
+  <div id="loader">
+    <img class="load-img" src="./assets/backgroud.jpg" alt="" />
+    <div class="lds-ripple">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="welcome slide-up">Welcome</div>
+    <div class="wait slide-up">Loading...</div>
+    <!-- <img src="./assets/loading.gif" alt="" /> -->
+  </div>
+
+  <a class="top" href="">
+    <div class="top-left">
+      <div class="logo">
+        <img class="slide-down" src="./assets/logo.jpg" alt="" />
+      </div>
+      <div class="Title-Text">
+        <div class="name slide-down">SMIT SHAH</div>
+        <div class="position slide-down">WEB DEVELOPER</div>
+      </div>
+    </div>
+  </a>
+
+  <div id="web">
+    <ul class="top-right">
+      <a href="#web">
+        <li class="slide-down scale12">&nbspHome</li>
+      </a>
+      <a href="#project">
+        <li class="slide-down scale12">Project</li>
+      </a>
+      <a href="#about">
+        <li class="slide-down scale12">&nbspAbout</li>
+      </a>
+    </ul>
+
+    <a href="#web"><img class="up-arrow slide-down" src="./assets/up.jpg" alt="" /></a><br />
+
+    <div class="card">
+      <i onclick="contact()" onmouseover="mouseIn()" onmouseout="mouseOut()"
+        class="fa fa-envelope slide-down contact-me"></i>
+      <span class="contactMe slide-down">Contact me</span>
+
+      <div class="back">
+        <div class="contact-body slide-down">
+          <div class="leftpart">
+            <div class="getintouch">Get in Touch</div>
+            <div class="addrs">Name</div>
+            <div class="address">Smit Shah</div>
+            <div class="addrs">Address</div>
+            <div class="address">
+              <div>134, Pandora Circle</div>
+              <div>M1H1V9, Toronto, ON</div>
+              <div>Canada</div>
+            </div>
+            <div class="addrs">Email</div>
+            <a class="address" href="mailto:smitshah681@gmail.com">smitshah681@gmail.com</a>
+
+          </div>
+          <div class="rightpart">
+            <form>
+              <div class="getintouch">Message Me</div>
+              <div class="nameandemail">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+              </div>
+
+              <textarea name="purpose" cols="30" rows="3" placeholder="Enter your purpose"></textarea>
+              <button type="submit">Hire me</button>
+            </form>
+            <h4>Or</h4>
+            <h4>Contact me on:</h4>
+            <div class="symbols">
+              <a href="https://github.com/Smit681" target="_blank"></a><i class="fa fa-github"
+                style="font-size:36px"></i>
+              <a href="https://www.linkedin.com/in/smit-shah-4767431a7/" target="_blank"></a><i
+                class="fa fa-linkedin-square" style="font-size:36px"></i>
+              <a href="mailto:smitshah681@gmail.com"><i class="fa fa-google" target="_blank"
+                  style="font-size:36px"></i></a>
+            </div>
+          </div>
+        </div>
+
+
+        <i onclick="closeContect()" class="fa fa-window-close close" style="font-size:36px" aria-hidden="true"></i>
+      </div>
+    </div>
+
+
+    <ul class="bottom-right">
+      <a href="https://www.linkedin.com/in/smit-shah-4767431a7/" target="_blank">
+        <li class="slide-down scale12">LinkedIn</li>
+      </a>
+      <a href="https://github.com/Smit681" target="_blank">
+        <li class="slide-down scale12">&nbsp&nbspGitHub</li>
+      </a>
+    </ul>
+
+
+
+
+    <div id="home">
+      <div class="textPart">
+        <div class="textName drop">SMIT SHAH</div>
+        <h1 class="myTitle drop">Website Developer and Designer</h1>
+        <div class="smallDesc drop">Recent graduate of Computer Programming from Seneca College. I am a Full Stack Web
+          Developer who
+          also possesses an interest in software development. Professional, work devoted and enthusiastic applicant,
+          Smit
+          is looking forward to start career in the world of web
+        </div>
+        <div class="anotherLinks drop">
+          <a class="drop" href="#Project">View Projects</a>
+          <span class="drop">or</span>
+          <a class="drop" href="#About">Read About Me</a>
+        </div>
+      </div>
+      <div class="imgPart">
+
+      </div>
+    </div>
+
+
+
+    <div id="project">
+
+      <h1 class="projectTitle">Projects</h1>
+      <div class="prjdec prjdec-enter"></div>
+      <a target="_blank" class="getlink">Visit Project</a>
+      <!-- Rotating dashed Lines -->
+      <svg viewBox="-55 -20 80 80" class="dashes" fill="none" stroke-dasharray="2 4 4 3 2 3 8 2 3 5">
+        <circle r="18" cx="0" cy="0" />
+      </svg>
+
+      <!-- Next Button -->
+      <button class="button" onclick="nextProject()"><span>Next</span><br> <span>Project</span></button>
+
+      <!-- Slides which will be redered dynamically from DOM -->
+      <div class="slide slidein">
+        <div class="slide-name name-enter"></div>
+        <img class="slide-image image-enter" />
+        <div class="quote quote-enter"></div>
+        <div class="tag1 tag1-enter"></div>
+        <div class="tag2 tag2-enter"></div>
+        <div class="tag3 tag3-enter"></div>
+      </div>
+    </div>
+
+
+
+    <div id="about">
+      <br><br>
+      <div class="firstabout">
+        <div class="leftabout">
+
+          <div class="aboutTitle drop">ABOUT ME</div>
+          <h1 class="mainaboutme drop">I am a Computer Programmer based in Toronto. My expertise are full-stack web
+            development, object-oriented programming concepts, data structures and algorithms. I have recently graduated
+            from Seneca College in the Computer Programming course with a 3.9 GPA.
+          </h1>
+
+          <h1 class="subaboutme drop">
+            I am excited to make the leap and continue refining my skills with the right company. Drop me a line in the
+            contact form or contact me on LinkedIn.
+          </h1>
+        </div>
+        <div class="rightabout">
+
+          <div class="aboutTitle drop">MY SKILLS</div>
+          <p class="mySkills drop">
+            <span>Programming Languages and Frameworks</span><br> C, C++, Java, JavaFX, Python, C#, .Net, JavaScript,
+            HTML, CSS, Bootstrap, Node, Express, React. <br><br>
+            <span>Database Languages and Tools </span><br> SQL, NoSQL, MongoDB, Oracle, Postgres. <br><br>
+            <span>Technologies</span><br> Visual Studio, Visual Studio Code, Eclipse, IntelliJ IDEA, Git, GitHub,
+            Heroku. <br><br>
+            <span> Cloud Technology</span><br>Azure, Azure DevOps, Firebase. <br>
+          </p>
+        </div>
+       
+      </div>
+      <h3>Want to know more about me?</h3>
+      <a class="resume" href="">Resume</a>
+
+    </div>
+    <script src="./index.js"></script>
+    <script src="./project.js"></script>
+</body>
+
+</html>

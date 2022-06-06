@@ -1,0 +1,96 @@
+#about{
+    margin: auto 3.5rem;
+    overflow: hidden;
+    height: 80vh;
+}
+
+.firstabout{
+    display: flex;
+}
+
+.leftabout{
+    margin: 2rem;
+    width: 50%;
+}
+
+.rightabout{
+    margin: 2rem;
+    width: 50%;
+}
+.aboutTitle{
+    font-size: 1.5rem;
+    color: #878a8f;
+    font-family: helvetica, sans-serif;
+    text-align: center;
+}
+
+.mainaboutme{
+    font-size: 1.6vw;
+    line-height: 1.7vw;
+    font-weight: 600;
+    color: #0f141e;
+    overflow: hidden;
+    padding-bottom: 15px;
+    padding-top:5px;
+    font-family: helvetica, sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.subaboutme{
+    font-size: 1.3vw;
+    line-height: 1.5vw;
+    color: #878a8f;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: helvetica, sans-serif;
+}
+
+.mySkills{
+    font-size: 1.3vw;
+    line-height: 1.5vw;
+    color: #878a8f;
+    font-family: helvetica, sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.space{
+    height: 5px;
+}
+
+.mySkills span{
+    font-size: 1.6vw;
+    line-height: 2vw;
+    font-weight: 600;
+    color: #0f141e;
+    font-family: helvetica, sans-serif;
+}
+
+#about h3{
+    font-family: helvetica, sans-serif;
+    color: #878a8f;
+    font-size: 1.5vw;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2vw;
+}
+
+.resume{
+    margin-left: 42vw;
+    text-align: center;
+    font-size: 1.5vw;
+    border-radius: 0.5rem;
+    padding: 1vw;
+    background-color: crimson;
+    color: white;
+    text-shadow: 0 2px 0 #000;
+}
+
+.resume:hover{
+    background-color: white;
+    color: crimson;
+    text-shadow: none;
+    border: 5px solid crimson;
+    transform: scale(2);
+}
