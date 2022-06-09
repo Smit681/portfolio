@@ -18,25 +18,63 @@ window.addEventListener("load", () => {
     }, 1750);
 })
 
+function Width() {
+    return Math.max(
+      document.body.scrollWidth,
+      document.documentElement.scrollWidth,
+      document.body.offsetWidth,
+      document.documentElement.offsetWidth,
+      document.documentElement.clientWidth
+    );
+  }
+
 window.addEventListener("scroll", (event) => {
     let scrollY = this.scrollY;
     console.log(scrollY);
-    if(scrollY >= 912 && scrollY <= 1648){
-        document.getElementsByClassName('name')[0].style.color = "white";
-        document.getElementsByClassName('position')[0].style.color = "white";
-        document.getElementsByClassName('top-right')[0].style.color = "white";
+    console.log(Width());
+    if(Width() > 760){
+        if(scrollY >= 912 && scrollY <= 1648){
+            document.getElementsByClassName('name')[0].style.color = "white";
+            document.getElementsByClassName('position')[0].style.color = "white";
+            document.getElementsByClassName('top-right')[0].style.color = "white";
+        }
+        else{
+            document.getElementsByClassName('name')[0].style.color = "#0f141e";
+            document.getElementsByClassName('position')[0].style.color = "#0f141e";
+            document.getElementsByClassName('top-right')[0].style.color = "#0f141e";    
+        }
     }
-    else{
-        document.getElementsByClassName('name')[0].style.color = "#0f141e";
-        document.getElementsByClassName('position')[0].style.color = "#0f141e";
-        document.getElementsByClassName('top-right')[0].style.color = "#0f141e";
+    else {
+        if(scrollY >= 780 && scrollY <= 1266){  
+            document.getElementsByClassName('name')[0].style.color = "white";
+            document.getElementsByClassName('position')[0].style.color = "white";
+            document.getElementsByClassName('top-right')[0].style.color = "white";
+        }
+        else {
+            document.getElementsByClassName('name')[0].style.color = "#0f141e";
+            document.getElementsByClassName('position')[0].style.color = "#0f141e";
+            document.getElementsByClassName('top-right')[0].style.color = "#0f141e";
+        }
 
     }
-    if(scrollY >= 188 && scrollY <= 1000){
-        document.getElementsByClassName('bottom-right')[0].style.color = "white";
+   
+     
+
+    if(Width() > 760){
+        if(scrollY >= 188 && scrollY <= 1000){
+            document.getElementsByClassName('bottom-right')[0].style.color = "white";
+        }
+        else{
+            document.getElementsByClassName('bottom-right')[0].style.color = "#0f141e";
+        }
     }
     else{
-        document.getElementsByClassName('bottom-right')[0].style.color = "#0f141e";
+        if(scrollY >= 188 && scrollY <= 672){
+            document.getElementsByClassName('bottom-right')[0].style.color = "white";
+        }
+        else{
+            document.getElementsByClassName('bottom-right')[0].style.color = "#0f141e";
+        }
     }
 });
 
