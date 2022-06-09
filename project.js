@@ -214,3 +214,20 @@ function nextProject(){
     if(counter == 3)
         counter = 0;
 }
+function getWidth() {
+    return Math.max(
+      document.body.scrollWidth,
+      document.documentElement.scrollWidth,
+      document.body.offsetWidth,
+      document.documentElement.offsetWidth,
+      document.documentElement.clientWidth
+    );
+  }
+
+mySvg = document.getElementsByClassName('dashes')[0];
+console.log(getWidth());
+if (getWidth() > 480) {
+    mySvg.setAttribute("viewBox", "-55 -20 80 80");
+} else {
+    mySvg.setAttribute("viewBox", "-40 -50 80 80");
+}

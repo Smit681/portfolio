@@ -122,3 +122,23 @@ a{
 .scale12:hover{
     transform: scale(0.8);
 }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .logo img{
+        height: 60px;
+        margin-right: 0.5rem;
+    }
+    .name{
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    .position{
+        font-size: 10px;
+    }
+    .top-right li{
+        font-size: 25px;
+    }
+    .bottom-right li{
+        font-size: 25px;
+    }
+}

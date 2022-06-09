@@ -42,7 +42,6 @@
     animation: dec-exit 1s;
 }
 
-
 .getlink{
     position: absolute;
     width: 13vw;
@@ -342,3 +341,88 @@
         opacity: 0;
     }
   }
+
+
+  @media only screen and (min-width: 768px) and (max-width: 999px) {
+    #project{
+        height: 65vh;
+    }
+    .button span{
+        font-size: 0.7rem;
+
+    }
+
+}
+
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+    .prjdec{
+        display: none;
+    }
+    .projectTitle{
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3rem;
+        font-family: helvetica, sans-serif;
+
+    }
+    #project{
+        height: 69vh;
+    }
+    .myCircle{
+        r:30
+    }
+    .slide-image{
+        height: 65vw;
+        width: 65vw;
+        left: 17vw;
+        top: 30vw;
+    }
+    .button{
+        height: 16vw;
+        width: 16vw;
+        left: 80vw;
+        top:55vw;
+        font-size: 0.8rem;
+        line-height: 0.9rem;
+    }
+    .slide-name{
+        left: 24vw;
+        top: 92vw;
+        font-size: 2.3rem;
+        width: 50%;
+    }
+    .quote{
+        left: 55vw;
+        top: 35vw;
+        width: 30vw;
+        font-size: 0.6rem;
+    }
+    .tag1{
+        left: 5vw;
+        top: 40vw;
+        width: 30vw;
+        font-size: 1rem;  
+    }
+    .tag2{
+        left: 5vw;
+        top: 70vw;
+        width: 40vw;
+        font-size: 1rem;
+    }
+    .tag3{
+        left: 70vw;
+        top: 80vw;
+        width: 30vw;
+        font-size: 1rem;
+    }
+    .getlink{
+        left: 72vw;
+        top:100vw;
+        font-size: 0.9rem;
+        width: 25vw;
+    }    
+
+}
+
+ 
